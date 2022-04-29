@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <!--Change it to your personal page's title-->
+<title>JCS JCPL Sample Page!</title>
+</head>
+
+<body bgcolor="#000000" text="#ffffff" link="#CDAB7B" vlink="#CDAB7B" alink="#ff0000">
+
+
+<table border="3" cellpadding="10" cellspacing="2" width="100%">
+
+<tr><td align="center" colspan="2">
+
+<font size="5" face="verdana,arial,helvetica,sans-serif">
+<!-- Change this to your personal page title-->
+<b>My Personal Page!</b>
+</font>
+
+</td></tr>
+
+<tr><td align="left" width="20%" valign="top">
+
+<font size="2" face="verdana">
+
+<a href="rockpaperscissors.html"><b>RPS</b></a>
+<p>
+<a href="snake.html"><b>Snake</b></a>
+<p>
+<a href="testlink.html"><b>Link Here</b></a>
+
+<p>
+<a href="testlink.html"><b>Link Here</b></a>
+<p>
+<a href="testlink.html"><b>Link Here</b></a>
+<p>
+<a href="testlink.html"><b>Link Here</b></a>
+<p>
+<a href="testlink.html"><b>Link Here</b></a>
+<p>
+<a href="testlink.html"><b>Link Here</b></a>
+<p>
+
+</font>
+
+<p>
+
+</td><td align="center" valign="top" width="80%">
+
+<font size="4" color="#B1C06D" face="comic sans ms,arial,helvetica,sans-serif">
+<b><i>This will be our personal page !</i></b>
+</font>
+
+<p>
+
+    <!-- Replace Charlie.jpg with an image of yourself or whatever-->
+<img src="Charlie.jpg" width="350" height="316" alt="JCS JCPL Personal Page">
+
+<p>
+
+<!-- Place your description here -->
+<font size="2" face="verdana,arial,helvetica,sans-serif">
+<b>
+Hello!<br>
+<br>
+This is my personal page!<br>
+<br>
+I hope you enjoy browsing it!<br>
+</b></font>
+
+</td></tr>
+<tr><td align="center" colspan="2">
+
+    <!--Put your copyright here-->
+<font size="1" face="verdana,arial,helvetica,sans-serif">
+Copyright (Sample only)
+</font>
+
+</td></tr></table>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<html>
+	<head>
+		<title>Rock, Paper, Scissors!</title>
+
+		<script>
+			function RPS(x)
+			{
+				// x corresponds to the move made
+				// x = 1, Rock
+				// x = 2, Paper
+				// x = 3, Scissors
+
+				// Your Move
+
+				if (x == 1) // Rock
+					document.getElementById("YourMove").innerHTML = "Your move: ROCK";
+				else if (x == 2) // Paper
+					document.getElementById("YourMove").innerHTML = "Your move: PAPER";
+				else if (x == 3) // Scissors
+					document.getElementById("YourMove").innerHTML = "Your move: SCISSORS";
+
+				// Declare a variable to declare opponent's move
+
+				var opMove;
+				
+				opMove = Math.floor(Math.random()*3) + 1; // opMove is a random value between 1 to 3
+
+				//opMove = 1 = Rock
+				//opMove = 2 = Paper
+				//opMove = 3 = Scissors
+
+				// Opponent's Move
+				if (opMove == 1) // Opponent chose Rock
+					document.getElementById("OpponentMove").innerHTML = "Opponent's move: ROCK";
+				else if (opMove == 2) // Opponent chose Paper
+					document.getElementById("OpponentMove").innerHTML = "Opponent's move: PAPER";
+				else if (opMove == 3) // Opponent chose Scissors
+					document.getElementById("OpponentMove").innerHTML = "Opponent's move: SCISSORS";
+
+				
+				// Determine the verdict
+				
+				var gameVerdict; 
+
+				// 3 possible options.
+				// gameVerdict = 1 ... Draw
+				// gameVerdict = 2 ... Defeat
+				// gameVerdict = 3 ... Victorious
+
+				if (x == opMove)         // Same move
+					gameVerdict = 1; // draw
+				else
+				{
+					if (x == 1) // x picked Rock
+					{
+						// Lose if opMove is Paper == 2
+						// Win if opMove is Scissors == 3
+						if (opMove == 2)
+							gameVerdict = 2; // Lose vs. Paper
+						else
+							gameVerdict = 3; // Win vs. Scissors
+					}
+
+					else if (x == 2) // Player chose Paper
+					{
+						// Lose if opMove is Scissors == 3
+						// Win if opMove is Rock == 1
+						if (opMove == 3)
+							gameVerdict = 2; // Lose vs. Scissors
+						else
+							gameVerdict = 3; // Win vs. Rock 
+					}
+
+					else if (x == 3) // Player chose Scissors
+					{
+						// Lose if opMove is Rock == 1
+						// Win if opMove is Paper == 2
+						if (opMove == 1)
+							gameVerdict = 2; // Lose vs. Rock
+						else
+							gameVerdict = 3; // Win vs. Paper
+					}
+				}
+
+				if (gameVerdict == 1) // Draw
+					document.getElementById("verdictText").innerHTML = "Verdict = DRAW";
+				else if (gameVerdict == 2) // Loss
+					document.getElementById("verdictText").innerHTML = "Verdict = DEFEAT!!";
+				else if (gameVerdict == 3) // Victory
+					document.getElementById("verdictText").innerHTML = "Verdict = VICTORY!!!";
+			}
+		</script>
+	</head>
+
+	<body>
+		<h1 id="YourMove">Your move: NONE</h1>
+		<h1 id="OpponentMove">Opponent's move: NONE</h1>
+		<p>
+
+		<button type="button" onClick="RPS(1)">Rock</button>
+		<button type="button" onClick="RPS(2)">Paper</button>
+		<button type="button" onClick="RPS(3)">Scissors</button>
+		<p>
+
+		<h2 id="verdictText">Verdict = NONE</h2>
+	</body>
+</html>
